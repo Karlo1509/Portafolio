@@ -1,0 +1,74 @@
+
+.studies_title{
+    font-family: var(--rubik);
+    font-size: 40px;
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.studies_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.card{
+    display: grid;
+    grid-template-areas: 
+        "card-imagem"
+        "card-cuerpo";
+    grid-template-columns: 100%;
+    grid-template-rows: 160px auto;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease 0s;
+    background-color: var(--lila);
+}
+
+.card:hover{
+    background-color: var(--light);
+    box-shadow: 0px 15px 30px rgb(77 87 222 / 30%);
+    transform: scale(1.1)
+}
+
+.card img{
+    grid-area: card-imagem;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.cards_text{
+    display: grid;
+    grid-area: card-cuerpo;
+    grid-template-areas: 
+        "card-header"
+        "card-contenido";
+    grid-template-rows: 40px auto;
+    padding: .75rem;
+}
+
+.card h1{
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--black);
+    text-align: center;
+}
+
+.card p{
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+}
