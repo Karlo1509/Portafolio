@@ -66,5 +66,9 @@ body.dark .contact_card_left{
         background-color: var(--dark);
     }
 
+    body.dark .items_container{
+        background-color: var(--darkgray);
+    }
+
 }
 
